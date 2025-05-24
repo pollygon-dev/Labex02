@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// Header Component
 const Header = ({ siteName }) => {
   return (
     <header className="header">
@@ -10,7 +9,6 @@ const Header = ({ siteName }) => {
   );
 };
 
-// Navigation Component
 const Navigation = ({ activeTab, onTabChange }) => {
   const navItems = ['Home', 'About Us', 'Contact Us'];
   
@@ -31,7 +29,6 @@ const Navigation = ({ activeTab, onTabChange }) => {
   );
 };
 
-// Content Component
 const ContentSection = ({ title, children }) => {
   return (
     <main className="content-section">
@@ -43,7 +40,6 @@ const ContentSection = ({ title, children }) => {
   );
 };
 
-// Main App Component
 const App = () => {
   const [activeTab, setActiveTab] = useState('Home');
 
